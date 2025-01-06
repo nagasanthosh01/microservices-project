@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker bukld -t santhu156/service:v1 .'
+                sh 'docker build -t santhu156/service:v1 .'
             }
         }
         stage("Push") {
